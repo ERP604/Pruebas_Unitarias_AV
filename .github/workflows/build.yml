@@ -31,5 +31,6 @@ jobs:
 
         - name: Tests2
           run: |
-            g++ -o test2 test2.cpp
-            ./test2
+            g++ -o tests/test2 tests/test2.cpp
+            chmod +x tests/test2
+            ./tests/test2
