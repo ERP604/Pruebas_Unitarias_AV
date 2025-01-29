@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
-#include "MyMathLib.h"
+#include "../MyMathLib.h"
 #include <iostream>
 #include <cassert>
-#include "../Operaciones.h"
+#include "../operaciones.h"
 
 
 TEST(MathTestCase, MathTestSqrt9)
@@ -12,10 +12,10 @@ TEST(MathTestCase, MathTestSqrt9)
 
 
 void test_operaciones() {
-	assert(Operaciones::add(2, 3) == 5);
-	assert(Operaciones::subtract(5, 2) == 3);
-	assert(Operaciones::multiply(3, 4) == 12);
-	assert(Operaciones::divide(10, 2) == 5);
+	assert(suma(2, 3) == 5);
+	assert(resta(5, 2) == 3);
+	assert(multiplica(3, 4) == 12);
+	assert(divide(10, 2) == 5);
 
 	std::cout << "Todas las pruebas pasaron correctamente." << std::endl;
 }
