@@ -30,6 +30,7 @@ if(ENABLE_TESTING)
     # Archivos de pruebas
     set(TEST_SOURCES
             tests/test.cpp
+            tests/test2.cpp
     )
 
     # Crear ejecutable de pruebas

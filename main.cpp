@@ -17,4 +17,5 @@ int main()
     std::cout << "division (8) / (2) = " << divide (8, 2) << '\n';
 
     std::cout << "factorial (8) = " << factorial(8) << '\n';
+    std::cout << "permutacion (5, 5) = " << permutacion(10, 5) << '\n';
 }

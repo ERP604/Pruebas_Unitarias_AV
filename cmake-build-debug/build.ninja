@@ -89,6 +89,13 @@ build CMakeFiles/test_suite.dir/tests/test.cpp.obj: CXX_COMPILER__test_suite_uns
   OBJECT_DIR = CMakeFiles\test_suite.dir
   OBJECT_FILE_DIR = CMakeFiles\test_suite.dir\tests
 
+build CMakeFiles/test_suite.dir/tests/test2.cpp.obj: CXX_COMPILER__test_suite_unscanned_Debug C$:/Users/pengu/Downloads/MathLib-main/MathLib-main/tests/test2.cpp || cmake_object_order_depends_target_test_suite
+  DEP_FILE = CMakeFiles\test_suite.dir\tests\test2.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/pengu/Downloads/MathLib-main/MathLib-main/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/pengu/Downloads/MathLib-main/MathLib-main/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\test_suite.dir
+  OBJECT_FILE_DIR = CMakeFiles\test_suite.dir\tests
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target test_suite
@@ -97,7 +104,7 @@ build CMakeFiles/test_suite.dir/tests/test.cpp.obj: CXX_COMPILER__test_suite_uns
 #############################################
 # Link the executable test_suite.exe
 
-build test_suite.exe: CXX_EXECUTABLE_LINKER__test_suite_Debug CMakeFiles/test_suite.dir/tests/test.cpp.obj | lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
+build test_suite.exe: CXX_EXECUTABLE_LINKER__test_suite_Debug CMakeFiles/test_suite.dir/tests/test.cpp.obj CMakeFiles/test_suite.dir/tests/test2.cpp.obj | lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtestd.a  lib/libgtest_maind.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\test_suite.dir
