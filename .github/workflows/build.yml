@@ -28,3 +28,9 @@ jobs:
             cmake ..
             cmake --build .
             ctest --output-on-failure
+                - name: Compile and Run Tests1
+
+        - name: Tests2
+          run: |
+            g++ -o test2 test2.cpp
+            ./test2
