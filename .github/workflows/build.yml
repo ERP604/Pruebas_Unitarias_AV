@@ -42,6 +42,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for un mejor análisis
+      - name: Setup SonarQube Properties
+        run: echo "sonar.projectKey=pruebas_unitarias" >> sonar-project.properties
       - uses: sonarsource/sonarqube-scan-action@v3
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
